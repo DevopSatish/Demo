@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Next Labs assesments</title>
+    <style>
+      /* CSS to highlight the cards */
+      .highlight-card {
+        background-color: yellow;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
+    >
+      <h5 class="my-auto font-weight-normal">Company name</h5>
+      <nav class="my-2 mx-auto my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Features</a>
+        <a class="p-2 text-dark" href="#">Enterprise</a>
+        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Pricing</h1>
+      <p class="lead mx-auto">
+        Quickly build an effective pricing table for your potential customers
+        with this Bootstrap example. It's built with default Bootstrap
+        components and utilities with little customization.
+      </p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="slider"
+              ><h5 class="text-xl">Select the total customers count:</h5></label
+            >
+            <input
+              type="range"
+              class="form-control-range"
+              id="slider"
+              min="0"
+              max="30"
+              step="1"
+            />
+          </div>
+          <div id="sliderValue">0</div>
+          <!-- Element to display slider value -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-10">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $0 <small class="text-muted">/ mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Sign up for free
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-21">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $15 <small class="text-muted">/ mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-30">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $29 <small class="text-muted">/ mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <!-- Modal content for card-10 -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Welcome!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+            id="myForm"
+              action="https://forms.maakeetoo.com/formapi/414"
+              method="POST"
+            >
+              <div class="mb-3">
+                <label for="name" class="col-form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  type="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="col-form-label"
+                  >Order Comments</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      // JavaScript to handle real-time slider changes and highlight one card within a specified range
+      const slider = document.getElementById("slider");
+      const cards = document.querySelectorAll(".card");
+      const sliderValueDisplay = document.getElementById("sliderValue");
+
+      slider.addEventListener("input", function () {
+        const sliderValue = parseInt(this.value);
+        sliderValueDisplay.textContent = sliderValue; // Update the displayed value
+        cards.forEach((card) => {
+          const cardNumber = parseInt(card.classList[1].split("-")[1]);
+          if (cardNumber >= sliderValue && cardNumber < sliderValue + 10) {
+            card.classList.add("highlight-card");
+          } else {
+            card.classList.remove("highlight-card");
+          }
+        });
+      });
+    </script>
+ <!--   <div class="container my-2">
+      <h1 class="text-center">Posts</h1>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Hello please Help me Deliver the order as it is very fragile
+            </td>
+          </tr>
+          <tr>
+            <td>it contains mangoes and pomogranate please its persible</td>
+          </tr>
+          <tr>
+            <td>Hello Testing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    -->  
+      <div class="table-responsive" id="displayData">
+        <!-- Display form data here in a responsive table format -->
+    </div>
+
+
+    <script src="form.js"></script>
+
+     <div class="container mt-5">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Sentence</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+                <!-- Results will be displayed here -->
+            </tbody>
+        </table>
+        <div class="container mt-5">
+        <table class="table table-bordered">
+           <thead id="table-header">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+                <!-- Results will be displayed here -->
+            </tbody>
+        </table>
+        <div id="loading" class="text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
